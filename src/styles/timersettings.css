@@ -1,0 +1,20 @@
+.StopWatchToggle{
+    display: "flex";
+    
+}
+.timeSelection{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center;
+}
+.SaveChangesHolder{
+    display: flex;
+    flex-direction: row; 
+    justify-content: end;
+}
+.DropdownHolder{
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+}
