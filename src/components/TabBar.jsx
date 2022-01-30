@@ -20,8 +20,8 @@ const TabBar = ({children, active = 0}) => {
     }, [children])
 
     return(
-        <div className = "w-100">
-            <ul className = "nav nav-tabs">
+        <div className = "w-100" role="navigation">
+            <ul className = "nav nav-tabs .nav-justified">
                 {
                     tabsData.map(({tab},idx) => (
                         <li className="nav-item">
@@ -30,7 +30,7 @@ const TabBar = ({children, active = 0}) => {
                             href="#"
                             onClick={()=> setActiveTab(idx)}
                             >
-                                {tab}
+                                <img src={tab}></img>
                             </a>
                         </li>
                     ))
